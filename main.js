@@ -1,5 +1,5 @@
 
-/***** Start Game Button */
+/***** Start Game Button *****/
 
 let startGame = document.querySelector('#startGame');
 let startGameBox = document.querySelector('#startGameBox');
@@ -82,7 +82,8 @@ function level2End() {
     level3Start.classList.remove('hideDiv');
 }
 
-earth.onmouseover = function() {
+earth.addEventListener("mouseover", function() {
+
     earth.classList.add('zoom');
     document.body.style.overflow = "hidden";
 
@@ -95,7 +96,8 @@ earth.onmouseover = function() {
     }).mouseout(function() {
         clearTimeout(timeSet);
     });
-};
+    
+});
 
 /***** Level 3: KEY PRESS *****/
 
@@ -373,4 +375,3 @@ $('#option1_drop').bind('DOMSubtreeModified', function () {
     car3drop.classList.toggle('hideDiv');
     bgOverlay.classList.toggle('hideDiv');
 });
-
