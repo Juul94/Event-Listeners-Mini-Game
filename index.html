@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="startOverlay">
+
+    <div id="wrapper">
+
+
+        <div id="startGameBox">
+            <h1>The <span>easy</span> Game</h1>
+            <p class="spacerBot">You have to pass 7 easy levels to complete this game. <br /><br /> <span>Good Luck!</span>- Even though you don't need it</p>
+            <button id="startGame">Start Game</button>
+        </div><!-- startGameBox end -->
+
+
+
+        <div id="level1" class="levelsDiv hideDiv">
+
+            <h2>Level 1</h2>
+            <p>Click the orange circle</p>
+
+            <div class="area">
+                <div class='movingBox1'></div>
+                <div class='movingBox2'></div>
+                <div class='movingBox3'></div>
+                <div class='movingBox4'></div>
+            </div><!-- area end -->
+
+        </div><!-- level1 end -->
+
+
+
+        <div id="level2" class="levelsDiv hideDiv">
+
+            <h2>Level 2</h2>
+            <p>Mouse over the globus for 3 seconds</p>
+
+            <div class="area">
+                <img src="images/earth.png" class="earth">
+            </div><!-- area end -->
+
+        </div><!-- level2 end -->
+
+
+
+        <div id="level3" class="levelsDiv hideDiv">
+
+            <h2>Level 3</h2>
+
+            <p>Simply just press the following on your keyboard:</p>
+
+            <p class="level3Actions" id="key_1"><span class="large">Up Key (&#8593;)</span> <span id="key_counter1"></span> time<span class="times1">s</span></p>
+            <p class="level3Actions hideDiv" id="key_2"><span class="large">Left Key (&#8592;)</span> <span id="key_counter2"></span> time</p>
+            <p class="level3Actions hideDiv" id="key_3"><span class="large">Down Key (&#8595;)</span> <span id="key_counter3"></span> time<span class="times3">s</span></p>
+            <p class="level3Actions hideDiv" id="key_4"><span class="large">Right Key (&#8594;)</span> <span id="key_counter4"></span> time<span class="times4">s</span></p>
+            
+        </div><!-- level3 end -->
+
+        
+
+        <div id="level4" class="levelsDiv hideDiv">
+            <h2>Level 4</h2>
+            <p>Resize your browser window so it is 1000 x 600</p>
+
+            <p class="mt-1">Current size: <span id="currentSize"></span></p>
+
+        </div><!-- level4 end -->
+
+
+
+        <div id="level5" class="levelsDiv hideDiv">
+            <h2>Level 5</h2>
+            <p>Change the background-color to orange</p>
+
+            <p>Background-color: <span id="values"></span></p>
+            <input id="changeBG" name="name">
+            <div id="bgChangeComplete" class="hideDiv"></div>
+
+        </div><!-- level5 end -->
+
+
+
+        <div id="level6" class="levelsDiv hideDiv">
+            <h2>Level 6</h2>
+            <p>Make a calculation to get result: 394.5</p>
+
+            <form id="formCal">
+
+                <input id="firstVal" type="number">
+
+                <select id="operator">
+                    <option value="+" selected>+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+
+                <input id="secondVal" type="number">
+
+                <p>Calculation: <span id="calculation"></span></p>
+
+                <input id="formBtn" type="button" value="Calculate">
+
+            </form>
+
+            <div id="calculationComplete" class="hideDiv"></div>
+
+        </div><!-- level6 end -->
+
+
+
+        <div id="level7" class="levelsDiv hideDiv">
+            <h2>Level 7</h2>
+            <p>Drag the answer (text) below into the right box:</p>
+
+            <div class="carObject">
+                <div id="optionCar" ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true"></div>
+            </div>
+
+            <div class="carContainer">
+
+                <div class="carOption" id="option1">
+                    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" id="option1_drop"></div>
+                    <img src="images/mercedes.jpg" class="carImg" draggable="false" />
+                </div>
+
+                <div class="carOption" id="option2">
+                    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" id="option2_drop"></div>
+                    <img src="images/audi.jpg" class="carImg" draggable="false" />
+                </div>
+
+                <div class="carOption" id="option3">
+                    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" id="option3_drop"></div>
+                    <img src="images/jaguar.jpg" class="carImg" draggable="false"/>
+                </div>
+
+            </div><!-- carContainer end -->
+
+        </div><!-- level7 end -->
+
+
+
+        <div class="bgOverlay hideDiv">
+            <div id="gameComplete" class="">
+                <h3>Game Complate!</h3>
+                <p>Well done!</p> 
+                <p>You've now completed this super easy game.</p>
+            </div>
+        </div><!-- bgOverlay end -->
+
+
+
+    </div><!-- wrapper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

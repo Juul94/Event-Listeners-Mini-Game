@@ -1,0 +1,553 @@
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    overflow:auto;
+}
+
+#wrapper {
+    width:800px;
+    margin:30px auto;
+    font-family: Arial;
+}
+
+.startOverlay {
+    background-color: #072515;
+}
+
+#startGameBox {
+    width:500px;
+    text-align: center;
+    padding:20px;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.2);
+    border:1px solid white;
+    margin:100px auto;
+}
+
+#startGameBox span {
+    display:block;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:10px 0;
+}
+
+#startGameBox button {
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:4px;
+    border:none !important;
+    outline:none !important;
+    background-color:white;
+    font-size:16px;
+    text-transform: uppercase;
+    margin:15px;
+    background-color: #c37429;
+    transition: all 0.3s;
+    color: white;
+}
+
+#startGameBox button:hover {
+    padding: 15px 15px;
+    background-color: #814b19;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+h1 {
+    font-size:40px;
+    margin:0 0 25px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 span {
+    display:inline-block !important;
+    text-decoration: underline !important;
+    font-size:40px !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.spacerBot {
+    margin-bottom:40px;
+}
+
+.spacerTop {
+    margin-top:40px;
+}
+
+.boxRow {
+    display:block;
+    text-align: center;
+}
+
+.boxOuterDesign {
+    width:200px;
+    height:175px;
+    display: inline-block;
+}
+
+.labelDesign {
+    display:block;
+    width:175px !important;
+    font-weight: bold;
+    font-size:12px;
+    border:1px solid black;
+    margin:0 auto;
+    padding:7.5px 0;
+}
+
+.boxInnerDesign {
+    width:177px;
+    height:146.5px;
+    display: inline-block;
+    background-color:teal;
+}
+
+.rowLast {
+    display:block;
+    text-align: center;
+}
+
+.boxOuterDesignlast {
+    width:585px;
+    height:177px;
+    display: inline-block;
+}
+
+.boxInnerDesignlast {
+    width:585px;
+    height:177px;
+    display: inline-block;
+    background-color:teal;
+}
+
+.labelDesignLast {
+    display:block;
+    width:585px !important;
+    font-weight: bold;
+    font-size:12px;
+    border:1px solid black;
+    margin:0 auto;
+    padding:7.5px 0;
+}
+
+.levelsDiv {
+    color:white;
+}
+
+.levelsDiv p {
+    text-align: center;
+    font-size:16px;
+    margin-top:25px;
+}
+
+h2 {
+    font-size:35px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.underline {
+    text-decoration: underline !important;
+}
+
+/****** Level 1: CLICK (MOVING DIVS) ******/
+
+#level1, #level2, #level3, #level4,
+#level5, #level6, #level7 {
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+.area {
+    width:100%;
+    height:500px;
+}
+
+.movingBox1, .movingBox2, 
+.movingBox3, .movingBox4 {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    border-radius: 50%;
+}
+
+.movingBox1:hover, .movingBox2:hover, 
+.movingBox3:hover, .movingBox4:hover {
+    cursor: pointer;
+}
+
+.movingBox1 {
+    background-color:red;
+}
+
+.movingBox2 {
+    background-color:blue; 
+}
+
+.movingBox3 {
+    background-color:green; 
+}
+
+.movingBox4 {
+    background-color:orange;  
+}
+
+.hideDiv {
+    display:none !important;
+    transition: all 0.3s;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+/****** Level 2: MOUSEOVER (EARTH ZOOM) ******/
+
+.earth {
+    width:100px;
+    display:block;
+    margin:75px auto;
+}
+
+.earth {
+    cursor: pointer;
+}
+
+.zoom {
+    transition: transform 5s; /* Animation */
+    width: 100px;
+}
+  
+.zoom:hover {
+    transform: scale(50); /* (150% zoom)*/
+}
+
+/****** Level 3: KEY PRESS (BUTTONS CLICK) ******/
+
+.level3Actions {
+    width:275px;
+    margin:0 auto;
+    padding:15px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border:1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+
+span#key_counter1, span#key_counter2,
+span#key_counter3, span#key_counter4 {
+    font-size:25px;
+    font-weight: bold;
+}
+
+#level3 p {
+    margin-bottom:20px;
+}
+
+#key_1, #key_2,
+#key_3, #key_4 {
+    font-size:15px;
+    margin-top:50px;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+span.large {
+    display:block;
+    font-size:30px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+/****** Level 4: RESIZE (WINDOW) ******/
+
+#currentSize {
+    display:block;
+    font-size:25px;
+    margin-top:10px;
+    font-weight: bold;
+}
+
+.mt-1 {
+    margin-top:50px !important;
+}
+
+/****** Level 5: INPUT (CHANGE BG) ******/
+
+#changeBG {
+    display:block;
+    padding:10px;
+    margin:10px auto;
+    font-size:20px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#values {
+    text-transform: uppercase;
+}
+
+span.large {
+    font-size:22,5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bgChangeComplete {
+    display:block;
+    width:300px;
+    margin:50px auto;
+    text-align: center;
+    background-color:rgba(26, 105, 33, 0.5);
+    border:1px solid rgba(26, 105, 33, 0.7);
+    padding:20px;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+/****** Level 6: INPUT + BUTTONS (CALCULATE) ******/
+
+#formBtn {
+    width:175px;
+    padding:10px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:4px;
+    border:none !important;
+    outline:none !important;
+    background-color:white;
+    font-size:16px;
+    text-transform: uppercase;
+    margin:15px;
+    background-color: #c37429;
+    transition: all 0.3s;
+    color: white;
+    margin:30px auto;
+    display:block;
+    box-sizing: border-box;
+}
+
+#formBtn:hover {
+    background-color: #814b19;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#calculationComplete {
+    display:block;
+    width:300px;
+    margin:50px auto;
+    text-align: center;
+    background-color:rgba(26, 105, 33, 0.5);
+    border:1px solid rgba(26, 105, 33, 0.7);
+    padding:20px;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
+    -moz-animation: fadeIn 2s;
+    -o-animation: fadeIn 2s;
+    -ms-animation: fadeIn 2s;
+}
+
+#firstVal {
+    margin-top:50px !important;
+}
+
+#firstVal, #secondVal {
+    width:175px;
+    padding:5px 10px;
+    margin:15px auto;
+    display:block;
+    border-radius: 3px;
+    border:none;
+    box-shadow: none;
+    outline:none;
+}
+
+#operator {
+    width:175px;
+    padding:5px 10px;
+    margin:15px auto;
+    display:block;
+    border-radius: 3px;
+    border:none;
+    box-shadow: none;
+    outline:none;
+}
+
+#calculation {
+    display:block;
+    font-size:20px;
+    font-weight: bold;
+    margin:15px;
+}
+
+/****** Level 7: DRAG, DROP EVENT (OBJECT) ******/
+
+#boxArray {
+    text-align: center;
+    margin-top:50px;
+}
+
+.droptarget {
+    float: left; 
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color:rgba(255, 255, 255, 0.2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.carContainer {
+    width:100%;
+    margin: 25px auto;
+    display: block;
+    float: left;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+}
+
+.carOption {
+    width:200px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.carImg {
+    width:202px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carObject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    box-sizing: border-box;
+}
+
+#optionCar {
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.4);
+    border:rgba(255, 255, 255, 1);
+    padding:17px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-sizing: border-box;
+    width:200px;
+}
+
+.bgOverlay {
+    width:100%;
+    height:100%;
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.8);
+    left:0;
+    top:0;
+    z-index:1;
+}
+
+/****** GAME COMPLATE ******/
+
+#gameComplete {
+    width:400px;
+    padding:25px 100px;
+    display:block;
+    background-color:rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    margin:150px auto;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#gameComplete h3 {
+    margin-bottom:20px;
+    font-size:35px;
+    text-transform: uppercase;
+    color:orange;
+}
+
+#gameComplete p {
+    margin-bottom:10px;
+}
+
+#gameComplete p:first-of-type {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#restart {
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius:4px;
+    border:none !important;
+    outline:none !important;
+    background-color:white;
+    font-size:16px;
+    text-transform: uppercase;
+    margin:15px;
+    background-color: #c37429;
+    transition: all 0.3s;
+    color: white;
+}
+
+#restart:hover {
+    padding: 15px 15px;
+    background-color: #814b19;
+    transition: all 0.3s;
+    cursor: pointer;
+}
